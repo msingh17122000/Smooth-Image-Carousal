@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <link rel="stylesheet"href="css/main.css"></link>
+</head>
+<body>
+<section id="section01">
+    <div class="MyCarouselHeading">Image Carousel</div>
+    <br/>
+    <div class="MyCarouselContainer"> 
+            <img src="https://picsum.photos/5000/1600?image=823"class="slides" alt="Image01"/>
+            <img src="https://picsum.photos/5000/1600?image=826"class="slides" alt="Image02"/>
+            <img src="https://picsum.photos/5000/1600?image=828"class="slides" alt="Image03"/>
+            <img src="https://picsum.photos/5000/1600?image=869"class="slides" alt="Image04"/>
+            <img src="https://picsum.photos/5000/1600?image=845"class="slides" alt="Image05"/>
+            <div class="buttonsContainer">
+                <div class="prevButton"onclick="goPrev()"><img src="./assets/next.svg"alt="previous slide"/></div>
+                <div class="nextButton"onclick="goNext()"><img src="./assets/next.svg"alt="next slide"/></div>
+            </div>
+    </div>
+    <div class="MyCarouselController"id="MyCarouselController">
+        <div class="MyCarouselControllerContainer"id="MyCarouselControllerContainer">
+        </div>
+        <div class="play-pause-button"onclick="pauseSlider()"id="pause-button">
+            <img src="assets/pause.svg" alt="pause button"id="pause-btn">
+        </div>
+        <div class="play-pause-button"onclick="resumeSlider()"id="play-button">
+            <img src="assets/play.svg" alt="play button"id="play-btn">
+        </div>
+        <div class="reload-button"onclick="restartTimer()"id="reload-button">
+            <img src="assets/reload.svg" alt="reload button">
+        </div>
+    </div>
+</section>
+<br/><br/>
+    <!-- <button onclick="goPrev()">Prev</button>
+    <button onclick="goNext()">Next</buttom> -->
+</body>
+<script src="js/main.js"></script>
+</html>
