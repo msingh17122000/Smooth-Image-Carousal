@@ -20,20 +20,21 @@
                 <div class="prevButton"onclick="goPrev()"><img src="./assets/next.svg"alt="previous slide"/></div>
                 <div class="nextButton"onclick="goNext()"><img src="./assets/next.svg"alt="next slide"/></div>
             </div>
+            <div class="MyCarouselController"id="MyCarouselController">
+                <div class="MyCarouselControllerContainer"id="MyCarouselControllerContainer">
+                </div>
+                <div class="play-pause-button"onclick="pauseSlider()"id="pause-button">
+                    <img src="assets/pause.svg" alt="pause button"id="pause-btn">
+                </div>
+                <div class="play-pause-button"onclick="resumeSlider()"id="play-button">
+                    <img src="assets/play.svg" alt="play button"id="play-btn">
+                </div>
+                <div class="reload-button"onclick="restartTimer()"id="reload-button">
+                    <img src="assets/reload.svg" alt="reload button">
+                </div>
+            </div>
     </div>
-    <div class="MyCarouselController"id="MyCarouselController">
-        <div class="MyCarouselControllerContainer"id="MyCarouselControllerContainer">
-        </div>
-        <div class="play-pause-button"onclick="pauseSlider()"id="pause-button">
-            <img src="assets/pause.svg" alt="pause button"id="pause-btn">
-        </div>
-        <div class="play-pause-button"onclick="resumeSlider()"id="play-button">
-            <img src="assets/play.svg" alt="play button"id="play-btn">
-        </div>
-        <div class="reload-button"onclick="restartTimer()"id="reload-button">
-            <img src="assets/reload.svg" alt="reload button">
-        </div>
-    </div>
+
 </section>
 <br/><br/>
     <!-- <button onclick="goPrev()">Prev</button>
