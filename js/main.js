@@ -3,7 +3,7 @@ var counter = 0 ;
 var slideTimeSpeed = 8000; //speed of slides
 slides.forEach(
     (slide,index)=>{
-        slide.style.left = `${index * 100}%`
+        slide.style.left = `${index * 110}%`
     }
 )
 const goPrev =()=>{
@@ -32,7 +32,7 @@ const goNext =()=>{
 const slideImage = () =>{
     slides.forEach(
         (slide) =>{
-            slide.style.transform = `translateX(-${counter * 100}%)`
+            slide.style.transform = `translateX(-${counter * 110}%)`
         }
     )
 }
